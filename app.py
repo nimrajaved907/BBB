@@ -24,7 +24,7 @@ def seqValidator(seq):
 
 final_df = pd.DataFrame(columns=['Sequence ID', 'Sequence', 'Label'])
 seq = ""
-st.header("""DNAPred_Prot""")
+st.header("""BBB""")
 
 file_ = open("./WebPic.gif", "rb")
 contents = file_.read()
