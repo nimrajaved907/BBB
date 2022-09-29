@@ -9,7 +9,7 @@ import pickle
 import base64
 
 icon = Image.open('fav.png')
-st.set_page_config(page_title='DNAPred_Prot', page_icon = icon)
+st.set_page_config(page_title='BBB', page_icon = icon)
 with open("./scaler.pkl", 'rb') as file:
     scaler = pickle.load(file)
 
