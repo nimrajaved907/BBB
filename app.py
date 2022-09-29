@@ -34,15 +34,6 @@ st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="Header Image">', 
 
 st.sidebar.subheader(("Input Sequence(s) (FASTA FORMAT ONLY)"))
 fasta_string  = st.sidebar.text_area("Sequence Input", height=200)
-            
-st.subheader("Click the Example Button for Sample Data or Datset Button to download complete dataset")
-with open("dataset.zip", "rb") as fp:
-    btn = st.download_button(
-        label="Download Dataset",
-        data=fp,
-        file_name="dataset.zip",
-        mime="application/zip"
-    )
     
 if st.button('Example'):
     st.code(">sp|O95476|CNEP1_HUMAN CTD nuclear envelope phosphatase 1 OS=Homo sapiens OX=9606 GN=CTDNEP1 PE=1 SV=2\nMMRTQCLLGLRTFVAFAAKLWSFFIYLLRRQIRTVIQYQTVRYDILPLSPVSRNRLAQVKRKILVLDLDETLIHSHHDGVLRPTVRPGTPPDFILKVVIDKHPVRFFVHKRPHVDFFLEVVSQWYELVVFTASMEIYGSAVADKLDNSRSILKRRYYRQHCTLELGSYIKDLSVVHSDLSSIVILDNSPGAYRSHPDNAIPIKSWFSDPSDTALLNLLPMLDALRFTADVRSVLSRNLHQHRLW", language="markdown")
