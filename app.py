@@ -62,9 +62,9 @@ if st.sidebar.button("SUBMIT"):
             score = model.predict(fv_array)
             pred_label = np.round_(score, decimals=0, out=None)
             if(pred_label==1):
-                pred_label="DNA Binding"
+                pred_label="BBB"
             else:
-                pred_label="Non-DNA Binding"
+                pred_label="Non-BBB"
             final_df.iloc[iter, 2] = str(pred_label)
 
     st.dataframe(final_df)
